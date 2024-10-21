@@ -146,7 +146,7 @@ def fetch_ai_explanation(prompt, api_key):
         return {'error': response.status_code, 'message': response.text}
 
 
-api_key = 'AIzaSyDeZ71gRCQmFB-FzNrwrrhdEBvkbZ940VM'
+api_key = 'Your_api_key'
 prompt =  word_related_summary
 result = fetch_ai_explanation(prompt, api_key)
 text_content = result["candidates"][0]["content"]["parts"][0]["text"]
